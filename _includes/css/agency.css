@@ -242,7 +242,8 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.7);
+        padding-bottom: 85px;
     }
 
     .navbar-default .navbar-brand {
@@ -885,12 +886,14 @@ Hero Banner CSS
     top: 60px;
     width: 100%;
     text-align: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.7);
     padding: 3px 0;
 }
 @media(min-width: 768px) {
     .intro-container {
+        z-index: 1111;
         top: 110px;
+        background: transparent;
     }
 }
 .intro-container .intro-text {
