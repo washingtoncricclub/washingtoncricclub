@@ -242,6 +242,7 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+        background: rgba(0, 0, 0, 0.5);
     }
 
     .navbar-default .navbar-brand {
@@ -268,17 +269,17 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color:#fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/IMG_2456_copy.jpg');
+    /* background-attachment: scroll;
+    background-image: url('{{ site.baseurl }}/img/IMG_2544.jpg');
     background-position: center center;
     background-repeat: none;
     /* -webkit-background-size: cover;
     -moz-background-size: cover; */
-    background-size: cover;
+    /* background-size: cover; */
     /* -o-background-size: cover; */
 }
 
-header .intro-text {
+/* header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -298,9 +299,9 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
-}
+} */
 
-@media(min-width:768px) {
+/* @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;
@@ -322,7 +323,7 @@ header .intro-text .intro-heading {
         font-weight: 700;
         line-height: 75px;
     }
-}
+} */
 
 section {
     padding: 100px 0;
@@ -864,4 +865,47 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+
+
+/*
+Hero Banner CSS
+*/
+@keyframes slideInFromLeft {
+    0% {
+        font-size: 6px;
+    }
+    100% {
+      font-size: 26px;
+    }
+  }
+.intro-container {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 3px 0;
+}
+@media(min-width: 768px) {
+    .intro-container {
+        top: 110px;
+    }
+}
+.intro-container .intro-text {
+    color: white;
+    margin: 0;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    letter-spacing: 5px;
+    font-size: 26px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+nav + section {
+    padding: 0!important;
+}
+@media(max-width: 767px) {
+    nav + section {
+        padding-top: 50px!important;
+    }
 }

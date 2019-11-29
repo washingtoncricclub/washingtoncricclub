@@ -36,3 +36,6 @@ Icon
 .Spotlight-V100
 .Trashes
 .vs/
+
+# unracked files
+.jekyll-cache/
