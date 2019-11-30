@@ -863,11 +863,13 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
+    color: white;
     background: #{{ site.data.template.color.primary }};
 }
 
 ::selection {
     text-shadow: none;
+    color: white;
     background: #{{ site.data.template.color.primary }};
 }
 
@@ -1035,7 +1037,7 @@ Adding modal style
 .text-muted.about-desc {
     line-height: 1.5;
     font-style: normal;
-    color: chocolate;
+    color: #777;
 }
 .timeline>li .timeline-image:hover {
     cursor: pointer;
