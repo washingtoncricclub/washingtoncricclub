@@ -6,18 +6,6 @@ title: Washington Cricket Club
 email: washingtoncricclub@gmail.com
 description: "An Awesome Cricket CLub."
 
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url: https://www.facebook.com/WashCricket/
-  - title: google
-    url: washingtoncricclub@gmail.com
-  - title: paypal
-    url: washingtoncricclub@gmail.com
-
 # Postal address (add as many lines as necessary)
 address:
   - line: 3481 Melrose Place
