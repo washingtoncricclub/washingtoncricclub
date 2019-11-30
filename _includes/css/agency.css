@@ -642,6 +642,16 @@ section h3.section-subheading {
 .team-member img {
     margin: 0 auto;
     border: 7px solid #fff;
+    height: 200px;
+    width: 200px;
+}
+@media only screen and (max-width: 768px) {
+    .team-member img {
+        margin: 0 auto;
+        border: 7px solid #fff;
+        height: 150px;
+        width: 150px;
+    }
 }
 
 .team-member h4 {
@@ -922,7 +932,7 @@ Adding modal style
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 9999; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -940,6 +950,7 @@ Adding modal style
   width: 80%;
   max-width: 700px;
 }
+
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
@@ -983,8 +994,41 @@ Adding modal style
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 767px){
   .modal-content {
-    width: 100%;
+    width: 90%;
   }
+}
+
+.modal-thumbnail {
+    height: 67px;
+    width: 67px;
+}
+@media only screen and (min-width: 768px) {
+    .modal-thumbnail {
+        height: 136px;
+        width: 136px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .modal-thumbnail {
+        height: 156px;
+        width: 156px;
+    }
+}
+.row.eq-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-muted.img-desc {
+    font-size: large;
+    color: chocolate;
+}
+.text-muted.about-desc {
+    line-height: 1.5;
+    font-style: normal;
+    color: chocolate;
 }

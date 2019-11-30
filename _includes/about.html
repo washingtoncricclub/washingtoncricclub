@@ -2,17 +2,17 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center">About {{ site.data.template.team.name }}</h2>
+                    <h3 class="section-subheading text-muted about-desc"><strong>Tradition-</strong> We are a bunch of passionate amateur cricketers, lucky to have come all the way to US and still able to play the game that we love. We believe in providing equal opportunity to the committed cricketers  nurturing their talent. WCC is a friendly and vibrant club where new players are warmly welcomed. While we do strive for the excellence on the field but social side of the club game is also very important to us. We believe in the old saying that “ Cricket is a gentleman’s game” and we respect our opponent on and off the field.<br /> <br /><strong>History-</strong> Washington Cricket Club was established in Spring 2019 and in its inaugural season won both the 40 and 20 over NWCL Div D championship.</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/IMG-20190324-WA0011_1_200x200.jpg" alt="">
+                            <div class="timeline-image" onclick="openMe(event)">
+                                <img class="img-circle modal-thumbnail" src="img/IMG-20190324-WA0011.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -25,8 +25,8 @@
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/IMG-20190811-WA0013_200x200.jpg" alt="">
+                            <div class="timeline-image" onclick="openMe(event)">
+                                <img class="img-circle modal-thumbnail" src="img/IMG-20190811-WA0013.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -39,8 +39,8 @@
                             </div>
                         </li>
                         <li>
-                            <div class="timeline-image">
-                                <img id="myImg" class="img-circle img-responsive" src="img/about/IMG-20190824-WA0005_200x200.jpg" alt="">
+                            <div class="timeline-image" onclick="openMe(event)">
+                                <img class="img-circle modal-thumbnail" src="img/IMG-20190824-WA0005.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -53,8 +53,8 @@
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/IMG_2545_1_200x200.jpg" alt="">
+                            <div class="timeline-image" onclick="openMe(event)">
+                                <img class="img-circle modal-thumbnail" src="img/IMG_2545.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -67,11 +67,13 @@
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
+                            <a href="#contact">
+                                <div class="timeline-image">
+                                    <h4>Be Part
+                                        <br>Of Our
+                                        <br>Story!</h4>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -82,23 +84,17 @@
 <!-- The Modal -->
 <div id="myModal" class="modal">
     <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
+    <img class="modal-content modal-img" id="img01">
     <div id="caption"></div>
-  </div>
+</div>
   
   <script>
   // Get the modal
   var modal = document.getElementById("myModal");
   
   // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById("myImg");
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
   
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
@@ -106,5 +102,11 @@
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() { 
     modal.style.display = "none";
+  }
+
+  function openMe(event) {
+    modal.style.display = "block";
+    modalImg.src = event.target.src;
+    captionText.innerHTML = event.target.alt;
   }
   </script>
