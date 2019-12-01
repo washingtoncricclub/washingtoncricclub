@@ -983,7 +983,7 @@ Adding modal style
 }
 
 /* The Close Button */
-.close {
+.close, .codeClose {
   position: fixed;
   top: 15px;
   right: 35px;
