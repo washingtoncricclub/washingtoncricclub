@@ -88,7 +88,7 @@
 <div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content modal-img" id="img01">
-    <div id="caption"></div>
+    <div id="caption" class="caption-text"></div>
 </div>
   
   <script>
@@ -109,7 +109,8 @@
 
   document.addEventListener('click', () => {
         let abc = !event.target.className.includes('modal-content');
-        if(abc && event.target.style.display === 'block') {
+        console.log('event', event.target.className);
+        if(abc && (event.target.style.display === 'block' || event.target.classList.contains('caption-text'))) {
             modal.style.display = "none";
         }
     });
