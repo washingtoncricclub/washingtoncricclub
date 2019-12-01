@@ -1043,3 +1043,10 @@ Adding modal style
     cursor: pointer;
     opacity: 0.7;
 }
+.input-group {
+    width: 50%;
+    margin: 35px auto;
+}
+.modal-button {
+    margin-bottom: 50px;
+}

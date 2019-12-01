@@ -1,3 +1,29 @@
+<div id="codeModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content modal-img text-center">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Default" placeholder="Enter code here" id="expenseCode">
+            </div>
+            <button type="button" class="btn btn-primary modal-button" onclick="tryMe()">Submit</a>
+        </div>
+    </div>
+     <script>
+      let codeModal = document.getElementById("codeModal");
+      var codeSpan = document.getElementsByClassName("close")[0];
+      let expenseCode = document.getElementById('expenseCode');
+      
+      codeSpan.onclick = function () { 
+        codeModal.style.display = "none";
+      }
+    
+      function openExpenseModal() {
+        codeModal.style.display = "block";
+      }
+      
+        function tryMe() {
+            expenseCode.value === 'wccExpense' ? location.replace('https://docs.google.com/spreadsheets/d/1fYF_HFirj5Ky2gKxwH-6qbOpTIBgo6l-hiu8ZioUZcA/edit#gid=1027507853') : alert('Incorrect code');
+        }
+     </script>
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -25,7 +51,7 @@
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">TBD</a>
+                        <a class="page-scroll" href="javascript:void(0)" onclick="openExpenseModal()">Expense Sheet</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
