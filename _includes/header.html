@@ -1,6 +1,6 @@
 <div id="codeModal" class="modal">
         <span class="codeClose">&times;</span>
-        <div class="modal-content modal-img text-center">
+        <div class="modal-content modal-img text-center" id="modalContent">
             <div class="input-group mb-3">
                 <input type="text" class="form-control" aria-label="Default" placeholder="Enter code here" id="expenseCode">
             </div>
@@ -11,8 +11,16 @@
       let codeModal = document.getElementById("codeModal");
       var codeSpan = document.getElementsByClassName("codeClose")[0];
       let expenseCode = document.getElementById('expenseCode');
+      let modalContent = document.getElementById('modalContent');
+
+      document.addEventListener('click', () => {
+          let abc = !event.target.className.includes('modal-content');
+            if(abc && event.target.style.display === 'block') {
+                codeModal.style.display = "none";
+            }
+      });
       
-      codeSpan.onclick = function () { 
+      codeSpan.onclick = function () {
         codeModal.style.display = "none";
       }
     
