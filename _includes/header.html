@@ -1,5 +1,5 @@
 <div id="codeModal" class="modal">
-        <span class="close">&times;</span>
+        <span class="codeClose">&times;</span>
         <div class="modal-content modal-img text-center">
             <div class="input-group mb-3">
                 <input type="text" class="form-control" aria-label="Default" placeholder="Enter code here" id="expenseCode">
@@ -9,7 +9,7 @@
     </div>
      <script>
       let codeModal = document.getElementById("codeModal");
-      var codeSpan = document.getElementsByClassName("close")[0];
+      var codeSpan = document.getElementsByClassName("codeClose")[0];
       let expenseCode = document.getElementById('expenseCode');
       
       codeSpan.onclick = function () { 
@@ -21,7 +21,12 @@
       }
       
         function tryMe() {
-            expenseCode.value === 'wccExpense' ? location.replace('https://docs.google.com/spreadsheets/d/1fYF_HFirj5Ky2gKxwH-6qbOpTIBgo6l-hiu8ZioUZcA/edit#gid=1027507853') : alert('Incorrect code');
+            if(expenseCode.value === 'wccExpense') {
+                location.replace('https://docs.google.com/spreadsheets/d/1fYF_HFirj5Ky2gKxwH-6qbOpTIBgo6l-hiu8ZioUZcA/edit#gid=1027507853')
+                codeModal.style.display = "none";
+            } else {
+                alert('Incorrect code')
+            };
         }
      </script>
 <!-- Navigation -->
