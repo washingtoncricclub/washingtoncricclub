@@ -1,83 +1,92 @@
 <div id="codeModal" class="modal">
-        <span class="codeClose">&times;</span>
-        <div class="modal-content modal-img text-center" id="modalContent">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Default" placeholder="Enter code here" id="expenseCode">
-            </div>
-            <button type="button" class="btn btn-primary modal-button" onclick="tryMe()">Submit</a>
+    <span class="codeClose">&times;</span>
+    <div class="modal-content modal-img text-center" id="modalContent">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Default" placeholder="Enter code here" id="expenseCode"  autofocus="autofocus" onfocus="this.value=''">
         </div>
+        <button id="submitbtn" type="button" class="btn btn-primary modal-button" onclick="tryMe()">Submit</a>
     </div>
-     <script>
-      let codeModal = document.getElementById("codeModal");
-      var codeSpan = document.getElementsByClassName("codeClose")[0];
-      let expenseCode = document.getElementById('expenseCode');
-      let modalContent = document.getElementById('modalContent');
+</div>
+<script>
+    let codeModal = document.getElementById("codeModal");
+    var codeSpan = document.getElementsByClassName("codeClose")[0];
+    let expenseCode = document.getElementById('expenseCode');
+    let modalContent = document.getElementById('modalContent');
 
-      document.addEventListener('click', () => {
-          let abc = !event.target.className.includes('modal-content');
-            if(abc && event.target.style.display === 'block') {
-                codeModal.style.display = "none";
-            }
-      });
-      
-      codeSpan.onclick = function () {
-        codeModal.style.display = "none";
-      }
-    
-      function openExpenseModal() {
-        codeModal.style.display = "block";
-      }
-      
-        function tryMe() {
-            if(expenseCode.value === 'wccExpense') {
-                location.replace('https://docs.google.com/spreadsheets/d/1fYF_HFirj5Ky2gKxwH-6qbOpTIBgo6l-hiu8ZioUZcA/edit#gid=1027507853')
-                codeModal.style.display = "none";
-            } else {
-                alert('Incorrect code')
-            };
+    document.addEventListener('click', () => {
+        let abc = !event.target.className.includes('modal-content');
+        if (abc && event.target.style.display === 'block') {
+            codeModal.style.display = "none";
         }
-     </script>
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
-            </div>
+    });
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="javascript:void(0)" onclick="openExpenseModal()">Expense Sheet</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    codeSpan.onclick = function () {
+        codeModal.style.display = "none";
+    }
+
+    function openExpenseModal() {
+        codeModal.style.display = "block";
+        $('#expenseCode').focus();
+    }
+
+    document.getElementById("expenseCode")
+        .addEventListener("keyup", function (event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                document.getElementById("submitbtn").click();
+            }
+        });
+
+    function tryMe() {
+        if (expenseCode.value === 'wccExpense') {
+            location.replace('https://docs.google.com/spreadsheets/d/1fYF_HFirj5Ky2gKxwH-6qbOpTIBgo6l-hiu8ZioUZcA/edit#gid=1027507853')
+            codeModal.style.display = "none";
+        } else {
+            alert('Incorrect code')
+        };
+    }
+</script>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">Team</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="javascript:void(0)" onclick="openExpenseModal()">Expense Sheet</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
 <!--
         {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
  -->
-
