@@ -996,7 +996,9 @@ Adding modal style
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.codeClose:hover,
+.codeClose:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
