@@ -38,14 +38,6 @@
             }
         });
 
-    document.getElementById("expenseCode")
-        .addEventListener("keydown", function (event) {
-            event.preventDefault();
-            if (event.keyCode === 27) {
-                codeModal.style.display = "none";
-            }
-        });
-
     function tryMe() {
         if (expenseCode.value === 'wccExpense') {
             location.replace('https://docs.google.com/spreadsheets/d/1fYF_HFirj5Ky2gKxwH-6qbOpTIBgo6l-hiu8ZioUZcA/edit#gid=1027507853')
