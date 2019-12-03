@@ -2,7 +2,8 @@
     <span class="codeClose">&times;</span>
     <div class="modal-content modal-img text-center" id="modalContent">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" aria-label="Default" placeholder="Enter code here" id="expenseCode"  autofocus="autofocus" onfocus="this.value=''">
+            <input type="text" class="form-control" aria-label="Default" placeholder="Enter code here" id="expenseCode"
+                autofocus="autofocus" onfocus="this.value=''">
         </div>
         <button id="submitbtn" type="button" class="btn btn-primary modal-button" onclick="tryMe()">Submit</a>
     </div>
@@ -34,6 +35,14 @@
             event.preventDefault();
             if (event.keyCode === 13) {
                 document.getElementById("submitbtn").click();
+            }
+        });
+
+    document.getElementById("expenseCode")
+        .addEventListener("keydown", function (event) {
+            event.preventDefault();
+            if (event.keyCode === 27) {
+                codeModal.style.display = "none";
             }
         });
 
