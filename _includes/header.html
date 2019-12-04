@@ -31,14 +31,14 @@
     }
 
     document.getElementById("expenseCode")
-        .addEventListener("keyup", function (event) {
-            event.preventDefault();
-            if (event.keyCode === 13) {
-                document.getElementById("submitbtn").click();
-            } else if (event.keyCode === 27) {
-                codeModal.style.display = "none";;
-            }
-        });
+    .addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("submitbtn").click();
+        } else if (event.keyCode === 27) {
+            codeModal.style.display = "none";;
+        }
+    });
 
     function tryMe() {
         if (expenseCode.value === 'wccExpense') {

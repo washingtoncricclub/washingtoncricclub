@@ -116,6 +116,12 @@
         modal.style.display = "none";
     }
 
+    document.addEventListener("keyup", function (event) {
+        if (event.keyCode === 27) {
+            modal.style.display = "none";;
+        }
+    });
+
     document.addEventListener('click', () => {
         let abc = !event.target.className.includes('modal-content');
         if (abc && (event.target.style.display === 'block' || event.target.classList.contains('caption-text'))) {
