@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://formspree.io/washingtoncricclub@gmail.com",
                 type: "POST",
                 data: {
                     name: name,
@@ -26,6 +26,8 @@ $(function() {
                     email: email,
                     message: message
                 },
+                dataType: "json",
+                
                 cache: false,
                 success: function() {
                     // Success message
@@ -33,7 +35,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>Your message has been sent.<br></br>Thankyou for contacting WCC! We will get back to you shortly.</strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
