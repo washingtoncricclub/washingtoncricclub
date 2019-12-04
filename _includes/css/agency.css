@@ -993,6 +993,7 @@ Adding modal style
   font-weight: bold;
   transition: 0.3s;
   cursor: pointer;
+  opacity: 1;
 }
 
 .close:hover,
@@ -1053,4 +1054,11 @@ Adding modal style
 }
 .modal-button {
     margin-bottom: 50px;
+}
+.profile {
+    display: block;
+}
+.profile:hover {
+    text-decoration: none;
+    opacity: 0.7;
 }
