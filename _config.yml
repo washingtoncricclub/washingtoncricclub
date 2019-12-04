@@ -9,9 +9,7 @@ WCC comprises of passionate, committed and yet easy going cricket enthusiasts wh
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
-# Build settings
+  - line: Redmond, WA 98052
+  
 markdown: kramdown
 permalink: pretty
