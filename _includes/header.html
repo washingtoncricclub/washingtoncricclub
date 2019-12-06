@@ -31,14 +31,14 @@
     }
 
     document.getElementById("expenseCode")
-    .addEventListener("keyup", function (event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            document.getElementById("submitbtn").click();
-        } else if (event.keyCode === 27) {
-            codeModal.style.display = "none";;
-        }
-    });
+        .addEventListener("keyup", function (event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                document.getElementById("submitbtn").click();
+            } else if (event.keyCode === 27) {
+                codeModal.style.display = "none";;
+            }
+        });
 
     function tryMe() {
         if (expenseCode.value === 'wccExpense') {
@@ -77,10 +77,10 @@
                     <a class="page-scroll" href="#team">Team</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="javascript:void(0)" onclick="openExpenseModal()">Expense Sheet</a>
+                    <a class="page-scroll" href="#contact">Join us</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="javascript:void(0)" onclick="openExpenseModal()">Expense Sheet</a>
                 </li>
             </ul>
         </div>
