@@ -1,3 +1,9 @@
+---
+layout: page
+title: Photo Gallery
+permalink: /photogallery/
+---
+
 <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
@@ -16,7 +22,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                        <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ post.title }}</h4>
@@ -27,3 +33,9 @@
             </div>
         </div>
     </section>
+
+    <div class="gallery" data-columns="3">
+            {% for post in site.posts %}
+            <img src="{{ site.baseurl }}/img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="">
+            {% endfor %}
+    </div>

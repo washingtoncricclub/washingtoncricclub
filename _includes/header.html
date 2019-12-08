@@ -31,12 +31,19 @@
     }
 
     document.getElementById("expenseCode")
-        .addEventListener("keyup", function (event) {
-            event.preventDefault();
+        .addEventListener("keyup", (event) => {
             if (event.keyCode === 13) {
                 document.getElementById("submitbtn").click();
             } else if (event.keyCode === 27) {
                 codeModal.style.display = "none";;
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log('called')
+            if (window.location.pathname != '/') {
+                document.getElementsByTagName('nav')[0].classList.add('navbar-shrink');
+                document.getElementById("welcomewcc").style.display = 'none';
             }
         });
 
@@ -47,6 +54,12 @@
         } else {
             alert('Incorrect code')
         };
+    }
+    function goTo(event) {
+        if(window.location.pathname !== '/') {
+            const pathnameVal = event.target.getAttribute('href');
+            window.location.href = `/${pathnameVal}`;
+        }
     }
 </script>
 <!-- Navigation -->
@@ -61,7 +74,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
+            <a class="navbar-brand page-scroll" href="#page-top" onclick="goTo(event)">{{site.title}}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,16 +84,22 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href= "#about" onclick="goTo(event)">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#team">Team</a>
+                    <a class="page-scroll" href="#team" onclick="goTo(event)">Team</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Join us</a>
+                    <a class="page-scroll" href="#contact" onclick="goTo(event)">Join us</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="javascript:void(0)" onclick="openExpenseModal()">Expense Sheet</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ site.baseurl }}/practice" onclick="goTo()">Practice</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ site.baseurl }}/photogallery" onclick="goTo()">Gallery</a>
                 </li>
             </ul>
         </div>

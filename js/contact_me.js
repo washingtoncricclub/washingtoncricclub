@@ -10,7 +10,6 @@ $(function() {
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
             var message = $("textarea#message").val();
             var subject = $("input#subject").val();
             var cc = $("input#cc").val();
@@ -24,7 +23,6 @@ $(function() {
                 type: "POST",
                 data: {
                     name: name,
-                    phone: phone,
                     email: email,
                     message: message,
                     _subject: "[IMPORTANT]"+ subject + name + "!",

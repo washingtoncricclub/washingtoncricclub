@@ -29,7 +29,7 @@ var cbpAnimatedHeader = (function() {
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'navbar-shrink' );
 		}
-		else {
+		else if(window.location.pathname === '/') {
 			classie.remove( header, 'navbar-shrink' );
 		}
 		didScroll = false;
