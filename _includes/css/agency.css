@@ -1063,10 +1063,12 @@ Adding modal style
     opacity: 0.7;
 }
 body {
-    height: calc(100vh - 180px);
+    height: calc(100vh - 130px);
 }
 main.container-fluid {
     min-height: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
 .resp-container {
     position: relative;
@@ -1086,6 +1088,6 @@ main.container-fluid {
         padding-top: 115%;
     }    
 }
-main > section {
+main > section:first-of-type {
     padding-top: 0;
 }
