@@ -327,7 +327,7 @@ header .intro-text .intro-heading {
     }
 } */
 
-section {
+main, section {
     padding: 50px 0;
 }
 
@@ -347,7 +347,7 @@ section h3.section-subheading {
 }
 
 @media(min-width:768px) {
-    section {
+    main, section {
         padding: 100px 0;
     }
 }
@@ -926,7 +926,7 @@ nav + .hero-banner {
     padding: 0!important;
 }
 @media(max-width: 767px) {
-    nav + section {
+    nav + .hero-banner {
         padding-top: 50px!important;
     }
 }
@@ -1063,9 +1063,8 @@ Adding modal style
     opacity: 0.7;
 }
 body {
-    height: calc(100vh - 130px);
+    height: calc(100vh - 180px);
 }
 main.container-fluid {
     min-height: 100%;
-    padding: 0;
 }
