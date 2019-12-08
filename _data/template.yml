@@ -12,13 +12,4 @@ font:
 
 # Team Data
 team:
-  - name: 'Sunny Panndya'
-    img: 'image 1'
-    img2: 'image 2'
-  - name: 'Moiz Hussain'
-    img: 'abcd'
-    img2: 'defg'
-  - name: 'Sachin Jain'
-    img: 'abcd'
-    img2: 'defg'
-
+  name: "WCC"
