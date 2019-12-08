@@ -1086,3 +1086,6 @@ main.container-fluid {
         padding-top: 115%;
     }    
 }
+main > section {
+    padding-top: 0;
+}
