@@ -1023,6 +1023,7 @@ Adding modal style
         width: 136px;
     }
 }
+
 @media only screen and (min-width: 1200px) {
     .modal-thumbnail {
         height: 156px;
@@ -1045,6 +1046,7 @@ Adding modal style
     font-style: normal;
     color: #777;
 }
+
 .timeline>li .timeline-image:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -1091,4 +1093,60 @@ main.container-fluid {
 }
 main > section:first-of-type {
     padding-top: 0;
+}
+
+/*
+Practice page style
+*/
+
+.practice-text {
+    line-height: 1.5;
+    font-style: normal;
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-family: {{ site.data.template.font.secondary }};
+}
+
+.practice-subheading h3 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:300px;
+    width:400px;
+    position:absolute;
+}
+
+@media only screen and (max-width: 768px) {
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+section h3.map-heading{
+    margin-bottom: 10px;
+    text-transform: none;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
 }
