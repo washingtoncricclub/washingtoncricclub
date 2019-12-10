@@ -39,13 +39,13 @@
             }
         });
 
-        document.addEventListener("DOMContentLoaded", () => {
-            console.log('called')
-            if (window.location.pathname != '/') {
-                document.getElementsByTagName('nav')[0].classList.add('navbar-shrink');
-                document.getElementById("welcomewcc").style.display = 'none';
-            }
-        });
+    document.addEventListener("DOMContentLoaded", () => {
+        console.log('called')
+        if (window.location.pathname != '/') {
+            document.getElementsByTagName('nav')[0].classList.add('navbar-shrink');
+            document.getElementById("welcomewcc").style.display = 'none';
+        }
+    });
 
     function tryMe() {
         if (expenseCode.value === 'wccExpense') {
@@ -56,7 +56,7 @@
         };
     }
     function goTo(event) {
-        if(window.location.pathname !== '/') {
+        if (window.location.pathname !== '/') {
             const pathnameVal = event.target.getAttribute('href');
             window.location.href = `/${pathnameVal}`;
         }
@@ -84,7 +84,7 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href= "#about" onclick="goTo(event)">About</a>
+                    <a class="page-scroll" href="#about" onclick="goTo(event)">About</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#team" onclick="goTo(event)">Team</a>
@@ -93,13 +93,13 @@
                     <a class="page-scroll" href="#contact" onclick="goTo(event)">Join us</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="javascript:void(0)" onclick="openExpenseModal()">Expense Sheet</a>
-                </li>
-                <li>
                     <a class="page-scroll" href="/practice" onclick="goTo()">Practice</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="/photogallery" onclick="goTo()">Gallery</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="javascript:void(0)" onclick="openExpenseModal()">Expense Sheet</a>
                 </li>
             </ul>
         </div>
