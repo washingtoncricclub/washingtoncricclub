@@ -1118,18 +1118,13 @@ Practice page style
     text-transform: none;
 }
 
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:300px;
-    width:400px;
-    position:absolute;
+@media only screen and (max-width: 768px) {
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
