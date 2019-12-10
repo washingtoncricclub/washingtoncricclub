@@ -1145,3 +1145,11 @@ section h3.map-heading{
     font-style: normal;
     font-weight: 600;
 }
+
+section#calendar{
+    padding-top: 0;
+}
+
+section#practice{
+    padding-bottom: 20px;
+}
