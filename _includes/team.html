@@ -10,7 +10,7 @@
             {% for member in site.data.team.people %}
             <a href="{{ member.profile }}" class="profile col-xs-12 col-sm-4">
                 <div class="team-member">
-                    <img src="{{ member.pic }}" class="img-responsive img-circle" alt="">
+                    <img src="{{ member.pic }}" class="img-responsive img-circle" alt="{{ member.name }}">
                     <h4>{{ member.name }}</h4>
                     <p class="text-muted img-desc">{{ member.position }}</p>
                     <p class="text-muted">{{ member.skill }}</p>
