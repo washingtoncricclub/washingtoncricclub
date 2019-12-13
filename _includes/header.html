@@ -40,10 +40,13 @@
         });
 
     document.addEventListener("DOMContentLoaded", () => {
-        console.log('called')
         if (window.location.pathname != '/') {
             document.getElementsByTagName('nav')[0].classList.add('navbar-shrink');
-            document.getElementById("welcomewcc").style.display = 'none';
+            document.getElementById("welcomewcc") ? document.getElementById("welcomewcc").style.display = 'none' : null;
+            if (window.location.pathname === '/practice/') {
+                let header = document.getElementsByClassName('navbar')[0];
+                header.querySelectorAll('.practice')[0].parentElement.classList.add('active');
+            }
         }
     });
 
@@ -93,7 +96,7 @@
                     <a class="page-scroll" href="#contact" onclick="goTo(event)">Join us</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="/practice" onclick="goTo()">Practice</a>
+                    <a class="page-scroll practice" href="/practice" onclick="goTo(event)">Practice</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="javascript:void(0)" onclick="openExpenseModal()">Expense Sheet</a>
