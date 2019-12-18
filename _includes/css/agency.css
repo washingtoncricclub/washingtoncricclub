@@ -1153,3 +1153,37 @@ section#calendar{
 section#practice{
     padding-bottom: 20px;
 }
+
+/* Container needed to position the button. Adjust the width as needed */
+.mapimgcontainer {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image responsive */
+  .mapimgcontainer img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .mapimgcontainer .mapbtn {
+    position: absolute;
+    top: 80%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #{{ site.data.template.color.primary }};
+  }
+  
+  .mapimgcontainer .mapbtn:hover {
+    border-color: #{{ site.data.template.color.primary }};
+    color: #fff;
+    background-color: #{{ site.data.template.color.secondary }};
+  }
