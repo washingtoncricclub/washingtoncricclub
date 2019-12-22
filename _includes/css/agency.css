@@ -1164,12 +1164,14 @@ section#practice{
   .mapimgcontainer img {
     width: 100%;
     height: auto;
+    border-radius: 3%;
   }
 
 @media only screen and (min-width: 992px) {
     .mapimgcontainer img {
         width: 400px;
         height: 300px;
+        border-radius: 3%;
     }
 }
 
