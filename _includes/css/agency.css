@@ -1181,11 +1181,11 @@ section#practice{
     background-color: #{{ site.data.template.color.secondary }};
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 991px) {
     .mapbtndiv {
         padding-top: 2%;  
         position: relative;
-        text-align-last: center;
+        text-align: center;
     }
   }
 
