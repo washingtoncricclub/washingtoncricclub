@@ -1,88 +1,92 @@
-
 # Team names, titles and social links
 people:
-- name: ABHISHEK DHAR
-  pic: https://cricclubs.com/documentsRep/profilePics/276851.JPG
-  position: Founder with ACL tear 🦵
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=276851&clubId=232
-- name: AVINASH NIGAM
-  pic: https://cricclubs.com/documentsRep/profilePics/4c7eebdb-f626-4dd4-90e2-f2963163d31c.jpg
-  position: Grievance Manager (Mai baat karta hun...)
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=277056&clubId=232
-- name: BHUVESH ARORA
-  pic: https://cricclubs.com/documentsRep/profilePics/no_image.png
-  position:
-  skill: Batsman
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=1874891&clubId=232
-- name: GOKUL LN (Archived)
-  pic: https://cricclubs.com/documentsRep/profilePics/b62472a9-da54-4d77-a76a-022d2e59f359.jpg
-  position: Find me @ Farmers market
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=323193&clubId=232
-- name: LOUIS GILBERT
-  pic: https://cricclubs.com/documentsRep/profilePics/9ae6ac49-3e9d-4534-9182-b905a866c4a1.jpg
-  position: WHAT Did I Do BHAI??
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=602032&clubId=232
-- name: MOIZ HUSSAIN
-  pic: https://cricclubs.com/documentsRep/profilePics/7f70b2bd-e0ff-4d3a-92d3-b16a705e95b9.jpg
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=599336&clubId=232
-  position: Captain -- Guys let's warm up
-- name: PARAS JAIN
-  pic: https://cricclubs.com/documentsRep/profilePics/493617.JPG
-  position:
-  skill: Bowler
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=493617&clubId=232
-- name: PARITOSH RAI
-  pic: https://cricclubs.com/documentsRep/profilePics/e81b1357-e540-4aa2-b3a7-5513799e91a7.jpg
-  position: Protein Bar Supplier
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=584469&clubId=232
-- name: PREETAM SHINGAVI
-  pic: https://cricclubs.com/documentsRep/profilePics/d045b2f5-1f5b-4e47-837e-999499a6fbc0.jpg
-  position: Hardly visible
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=1361879&clubId=232
-- name: SACHIN JAIN
-  pic: https://cricclubs.com/documentsRep/profilePics/501997.JPG
-  position: Bahu Badhiya Slip Specialist
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=501997&clubId=232
-- name: SAHIL SHAKIR
-  pic: https://cricclubs.com/documentsRep/profilePics/42bb7b9e-0d48-4e99-8ffe-263751e7932b.jpg
-  position: Kya Ball hai teri 
-  skill: Wicket Keeper
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=552776&clubId=232
-- name: SANJEEV NARAYANAN
-  pic: https://cricclubs.com/documentsRep/profilePics/88c7d3ba-beda-46b6-8513-5319328fadb5.png
-  position:
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=1876351&clubId=232
-- name: SARATH KUMAR
-  pic: https://cricclubs.com/documentsRep/profilePics/8117df4f-2f73-4326-9657-67e4ad7b17a6.jpg
-  position: Default Leg Umpire
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=857045&clubId=232
-- name: SUMIT DEB
-  pic: https://cricclubs.com/documentsRep/profilePics/278310.JPG
-  position: 123... F**k 16
-  skill: Batsman
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=278310&clubId=232
-- name: SUNNY PANDYA
-  pic: https://cricclubs.com/documentsRep/profilePics/5bdd544f-8df2-4e49-9cfe-ec5af3873f6b.jpg
-  position: Vice Captain with "EXTRAS" ability
-  skill: All Rounder
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=373175&clubId=232
-- name: VENKATESH SETHURAMAN
-  pic: https://cricclubs.com/documentsRep/profilePics/278417.JPG
-  position: Cranky old man and also President 🤷
-  skill: Wicket Keeper
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=278417&clubId=232
-- name: VISHAL PATHAK
-  pic: https://cricclubs.com/documentsRep/profilePics/9f0ba6c6-5031-4a12-8336-36163396ee3b.jpg
-  position: Bakchod agori
-  skill: Bowler
-  profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=769596&clubId=232
+  - name: ABHISHEK DHAR
+    pic: https://cricclubs.com/documentsRep/profilePics/276851.JPG
+    position: Founder with ACL tear 🦵
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=276851&clubId=232
+  - name: AVINASH NIGAM
+    pic: https://cricclubs.com/documentsRep/profilePics/4c7eebdb-f626-4dd4-90e2-f2963163d31c.jpg
+    position: Grievance Manager (Mai baat karta hun...)
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=277056&clubId=232
+  - name: BHUVESH ARORA
+    pic: https://cricclubs.com/documentsRep/profilePics/24eb2730-f246-46db-bd6b-9326b5d0af7e.png
+    position:
+    skill: Batsman
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=1874891&clubId=232
+  - name: GOKUL LN (Archived)
+    pic: https://cricclubs.com/documentsRep/profilePics/b62472a9-da54-4d77-a76a-022d2e59f359.jpg
+    position: Find me @ Farmers market
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=323193&clubId=232
+  - name: LOUIS GILBERT
+    pic: https://cricclubs.com/documentsRep/profilePics/9ae6ac49-3e9d-4534-9182-b905a866c4a1.jpg
+    position: WHAT Did I Do BHAI??
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=602032&clubId=232
+  - name: MOIZ HUSSAIN
+    pic: https://cricclubs.com/documentsRep/profilePics/7f70b2bd-e0ff-4d3a-92d3-b16a705e95b9.jpg
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=599336&clubId=232
+    position: Captain -- Guys let's warm up
+  - name: PARAS JAIN
+    pic: https://cricclubs.com/documentsRep/profilePics/493617.JPG
+    position:
+    skill: Bowler
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=493617&clubId=232
+  - name: PARITOSH RAI
+    pic: https://cricclubs.com/documentsRep/profilePics/e81b1357-e540-4aa2-b3a7-5513799e91a7.jpg
+    position: Protein Bar Supplier
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=584469&clubId=232
+  - name: PREETAM SHINGAVI
+    pic: https://cricclubs.com/documentsRep/profilePics/d045b2f5-1f5b-4e47-837e-999499a6fbc0.jpg
+    position: Hardly visible
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=1361879&clubId=232
+  - name: SACHIN JAIN
+    pic: https://cricclubs.com/documentsRep/profilePics/501997.JPG
+    position: Bahu Badhiya Slip Specialist
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=501997&clubId=232
+  - name: SAHIL SHAKIR
+    pic: https://cricclubs.com/documentsRep/profilePics/42bb7b9e-0d48-4e99-8ffe-263751e7932b.jpg
+    position: Kya Ball hai teri
+    skill: Wicket Keeper
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=552776&clubId=232
+  - name: SANJEEV NARAYANAN
+    pic: https://cricclubs.com/documentsRep/profilePics/88c7d3ba-beda-46b6-8513-5319328fadb5.png
+    position:
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=1876351&clubId=232
+  - name: SARATH KUMAR
+    pic: https://cricclubs.com/documentsRep/profilePics/8117df4f-2f73-4326-9657-67e4ad7b17a6.jpg
+    position: Default Leg Umpire
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=857045&clubId=232
+  - name: SUMIT DEB
+    pic: https://cricclubs.com/documentsRep/profilePics/278310.JPG
+    position: 123... F**k 16
+    skill: Batsman
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=278310&clubId=232
+  - name: SUNNY PANDYA
+    pic: https://cricclubs.com/documentsRep/profilePics/5bdd544f-8df2-4e49-9cfe-ec5af3873f6b.jpg
+    position: Vice Captain with "EXTRAS" ability
+    skill: All Rounder
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=373175&clubId=232
+  - name: VENKATESH SETHURAMAN
+    pic: https://cricclubs.com/documentsRep/profilePics/278417.JPG
+    position: Cranky old man and also President 🤷
+    skill: Wicket Keeper
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=278417&clubId=232
+  - name: VIPUL RAWAL
+    pic: https://cricclubs.com/documentsRep/profilePics/00ec3c4d-b01d-4545-b9d0-4ccc56182b29.png
+    position:
+    skill: Bowler
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=1919879&clubId=232
+  - name: VISHAL PATHAK
+    pic: https://cricclubs.com/documentsRep/profilePics/9f0ba6c6-5031-4a12-8336-36163396ee3b.jpg
+    position: Bakchod agori
+    skill: Bowler
+    profile: https://cricclubs.com/NWCL/viewPlayer.do?playerId=769596&clubId=232
